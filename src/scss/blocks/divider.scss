@@ -1,0 +1,33 @@
+.divider {
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background-color: #EAEAEA;
+
+  &--location--header-buttons-block{
+    display: none;
+  }
+
+  &--location--header-inner-block{
+    order: 3;
+  }
+}
+
+@media (min-width: 500px) {
+  .divider {
+
+    &--location--header-buttons-block{
+      display: block;
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+  .divider {
+
+    &--location--header-inner-block{
+      order: 2;
+    }
+  }
+}

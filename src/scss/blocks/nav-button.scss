@@ -1,0 +1,6 @@
+.nav-button {
+  @include round-button;
+
+  position: relative;
+  order: 1;
+}

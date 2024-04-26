@@ -1,0 +1,14 @@
+.service-button {
+  @include round-button;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &--type--repair {
+    background-image: url('../img/repair-icon.svg');
+  }
+
+  &--type--status {
+    background-image: url('../img/status-icon.svg');
+  }
+}

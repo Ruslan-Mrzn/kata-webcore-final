@@ -1,0 +1,31 @@
+.burger {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: $color-light;
+  top: 19px;
+  left: 11px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $color-light;
+    left: 0;
+    top: -5px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $color-light;
+    bottom: -5px;
+    left: 0;
+  }
+}
