@@ -11,4 +11,20 @@
   &--type--status {
     background-image: url('../img/status-icon.svg');
   }
+
+  &--type--search {
+    background-image: url('../img/search-icon.svg');
+  }
+
+  &--type--phone {
+    background-image: url('../img/phone-icon.svg');
+  }
+
+  &--type--chat {
+    background-image: url('../img/chat-icon.svg');
+  }
+
+  &--type--profile {
+    background-image: url('../img/profile-icon.svg');
+  }
 }

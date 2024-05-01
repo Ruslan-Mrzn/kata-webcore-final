@@ -1,0 +1,70 @@
+.menu {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  max-width: 360px;
+  height: 100vh;
+  padding: 92px 16px 32px 16px;
+  background-color: $color-light;
+  z-index: 200;
+  transform: scale(0, 1);
+  transition: all 0.5s linear;
+
+  &__search {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+  }
+
+  &__contacts-buttons-block {
+    margin-top: auto;
+    padding-top: 30px;
+    display: flex;
+    column-gap: 16px;
+  }
+
+  &__mail {
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: $color-nav-link;
+  }
+
+  &__tel {
+    padding-top: 12px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    color: $color-nav-link;
+  }
+
+  &__lang {
+    display: flex;
+    column-gap: 7px;
+    padding-top: 8px;
+  }
+
+  &--state--opened {
+    left: 0;
+    transform: scale(1, 1);
+  }
+}
+
+@media (min-width: 360px) {
+  .menu {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-shadow: 0 16px 52px rgba($color: #0e1850, $alpha: 0.2);
+
+    &__search {
+      right: 24px;
+    }
+  }
+}

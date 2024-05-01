@@ -1,0 +1,29 @@
+.show-more-button {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  margin-top: 16px;
+  padding-left: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  color: $color-nav-link;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/show-more-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &--state--show {
+    color: transparent;
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.section-header {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-nav-link-active;
+  padding: 16px;
+  vertical-align: middle;
+  background: linear-gradient(270deg, $color-light, $color-main-bg);
+  border-top: 1px solid $color-header-border;
+}

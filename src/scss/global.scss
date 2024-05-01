@@ -15,15 +15,16 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
-  padding:0;
+  padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: "TT Lakes", sans-serif;
+  font-family: 'TT Lakes', sans-serif;
   font-weight: normal;
   min-width: 320px;
   max-width: 100%;
   margin: 0 auto;
   background: #ffffff;
+  position: relative;
 }

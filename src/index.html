@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="screen">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -10,23 +10,130 @@
     <title>Webcore-final</title>
   </head>
   <body>
+    <menu class="menu">
+      <button
+        class="service-button service-button--type--search menu__search"
+      ></button>
+      <nav class="menu__nav nav">
+        <ul class="nav__list nav-list">
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link nav-link nav-link--state--active"
+              >Ремонт техники</a
+            >
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link nav-link">Услуги и сервисы</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link nav-link">Партнерам</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link nav-link">Производителям</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link nav-link"
+              >Наши сервисные центры</a
+            >
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__contacts-buttons-block">
+        <button class="service-button service-button--type--phone"></button>
+        <button class="service-button service-button--type--chat"></button>
+        <button class="service-button service-button--type--profile"></button>
+      </div>
+      <a class="menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+      <a class="menu__tel" href="tel:8 800 890 8900">8 800 890 8900</a>
+      <div class="menu__lang">
+        <a href="" class="nav-link nav-link--state--active">RU</a>
+        <a href="#" class="nav-link">EN</a>
+        <a href="#" class="nav-link">CH</a>
+      </div>
+    </menu>
     <header class="header">
       <div class="header__inner-block">
         <button class="nav-button"><span class="burger"></span></button>
         <div class="divider divider--location--header-inner-block"></div>
-        <img class="header__logo" src="./img/logo.svg" alt="логотип">
+        <img class="header__logo" src="./img/logo.svg" alt="логотип" />
       </div>
       <div class="header__buttons-block">
         <div class="header__contacts-buttons-block">
-          <button class="service-button service-button--type--repair"></button>
-          <button class="service-button service-button--type--status"></button>
-          <button class="service-button service-button--type--status"></button>
+          <button class="service-button service-button--type--phone"></button>
+          <button class="service-button service-button--type--chat"></button>
+          <button class="service-button service-button--type--profile"></button>
         </div>
         <div class="divider divider--location--header-buttons-block"></div>
         <button class="service-button service-button--type--repair"></button>
         <button class="service-button service-button--type--status"></button>
       </div>
-
     </header>
+    <main class="main">
+      <section class="hero">
+        <h2 class="hero__header"></h2>
+        <ul class="hero__services services">
+          <li class="services__item">
+            <a href="#" class="services__link nav-link nav-link--state--active"
+              >Ремонтируемые бренды</a
+            >
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link nav-link"
+              >Дополнительные услуги</a
+            >
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link nav-link">Цены на услуги</a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link nav-link"
+              >Адреса сервисных центров</a
+            >
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link nav-link">Специальные цены</a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link nav-link">Отзывы</a>
+          </li>
+        </ul>
+        <div class="hero__inner">
+          <div class="hero__text-block">
+            <div class="hero__overflow">
+              <p class="hero__text"
+                >Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.</p
+              >
+              <p class="hero__text"
+                >Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.</p
+              >
+            </div>
+            <button class="hero__show-more show-more-button"
+              >Читать далее</button
+            >
+          </div>
+          <img class="hero__img" src="./img/hero-img.png" alt="CPS" />
+        </div>
+      </section>
+      <section class="repair-brands">
+        <h2 class="repair__header section-header"
+          >Ремонт техники различных брендов</h2
+        >
+        <div class="brands">
+          <div class="brands-wrapper">
+            <div class="brands-slide">Slide 1</div>
+            <div class="brands-slide">Slide 2</div>
+            <div class="brands-slide">Slide 3</div>
+          </div>
+          <div class="brands-pagination"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
