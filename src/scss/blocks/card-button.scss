@@ -1,0 +1,10 @@
+.card-button {
+  @include round-button;
+
+  background-color: $color-light;
+  border: 2px solid $color-primary;
+
+  background-image: url('../img/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}

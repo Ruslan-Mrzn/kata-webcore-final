@@ -28,3 +28,21 @@ body {
   background: #ffffff;
   position: relative;
 }
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  background: $color-slider-button;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px !important;
+}
