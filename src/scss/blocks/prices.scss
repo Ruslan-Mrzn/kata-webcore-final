@@ -1,44 +1,122 @@
 .prices {
+  padding-left: 8px;
+  &__header {
+    display: none;
+  }
+
+  & .swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 260px;
+    min-height: 200px;
+    padding: 16px;
+    background-color: $color-light;
+    border-radius: 6px;
+  }
+
+  &__button {
+    @include round-button;
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+    width: 119px;
+    height: 32px;
+    padding: 0 13px;
+    border-radius: 16px;
+    color: $color-light;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-align: left;
+    font-weight: 700;
+    background-image: url('../img/order-button-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 96px center;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 4px;
+    font-weight: 500;
+    color: $color-nav-link-active;
+  }
+
+  &__value {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    color: $color-nav-link;
+  }
 }
 
 @media (min-width: 768px) {
   .prices {
-    padding-right: 16px;
+    &__title {
+      padding: 0;
+    }
+
     & .swiper-wrapper {
       box-sizing: border-box;
       display: grid;
-      grid-template-columns: repeat(3, 1fr) min-content;
-      grid-template-rows: 50px;
-      grid-auto-rows: minmax(100px, auto);
-      padding: 0 20px;
+      grid-template-columns: minmax(1fr, min-content) repeat(2, 1fr) min-content;
+      grid-auto-rows: auto;
     }
 
     &__header {
+      padding: 16px;
       grid-column: span 4;
       display: grid;
       grid-template-columns: subgrid;
-      padding: 10px 10px;
     }
 
     & .swiper-slide {
-      border: 1px solid black;
+      border-radius: 0;
+      min-height: auto;
       grid-column: span 4;
       display: grid;
       grid-template-columns: subgrid;
-      padding: 10px 10px;
+      align-items: center;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+        right: 16px;
+        width: auto;
+        height: 1px;
+        background-color: $color-card-border;
+      }
+
+      & .prices__title {
+        display: none;
+      }
       &:nth-of-type(1) {
-        background-color: gray;
-        border: none;
-        margin-bottom: 20px;
+        background-color: transparent;
       }
       &:nth-of-type(2) {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
       }
       &:last-of-type {
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        &::after {
+          background-color: transparent;
+        }
       }
+    }
+
+    &__button {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      margin-left: auto;
     }
   }
 }

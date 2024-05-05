@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  row-gap: 16px;
+  border-top: 1px solid $color-header-border;
+  &__link {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: $color-nav-link-active;
+  }
+}

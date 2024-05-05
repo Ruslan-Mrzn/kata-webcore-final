@@ -10,3 +10,9 @@
   background: linear-gradient(270deg, $color-light, $color-main-bg);
   border-top: 1px solid $color-header-border;
 }
+
+@media (min-width: 768px) {
+  .section-header {
+    padding-left: 24px;
+  }
+}
