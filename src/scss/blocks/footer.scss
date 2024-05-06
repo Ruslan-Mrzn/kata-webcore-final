@@ -13,3 +13,21 @@
     color: $color-nav-link-active;
   }
 }
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    padding: 32px 24px 25px;
+    align-items: start;
+    justify-content: space-between;
+    &__link {
+      width: 220px;
+      &:first-of-type {
+        text-align: left;
+      }
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+}

@@ -41,6 +41,8 @@ toggleActiveLink('nav-list', 'hero__header')
 toggleActiveLink('menu__lang')
 toggleActiveLink('services')
 showMore('hero__text-block', 'hero__overflow')
+showMore('repair-brands', 'brands')
+showMore('repair-appliances', 'appliances')
 
 const menuButton = document.querySelector('.nav-button')
 const menu = document.querySelector('.menu')

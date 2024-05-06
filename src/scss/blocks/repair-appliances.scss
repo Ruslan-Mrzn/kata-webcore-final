@@ -1,3 +1,9 @@
 .repair-appliances {
   padding-bottom: 18px;
 }
+
+@media (min-width: 768px) {
+  .repair-appliances {
+    padding-bottom: 32px;
+  }
+}

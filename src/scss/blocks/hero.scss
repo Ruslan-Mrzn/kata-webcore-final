@@ -39,7 +39,7 @@
 
     &--state--opened {
       height: auto;
-      overflow: auto;
+      overflow: visible;
     }
   }
 
@@ -60,5 +60,58 @@
     margin-top: 16px;
     height: 176px;
     width: 100%;
+  }
+  &__show-more {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 321px) {
+  .hero {
+    &__img {
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    &__img {
+      height: auto;
+      width: 360px;
+      margin-top: 0;
+    }
+    &__header {
+      padding-left: 24px;
+    }
+    &__inner {
+      padding: 32px 24px 0;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    }
+    &__services {
+      margin-top: 32px;
+      padding-left: 24px;
+    }
+    &__text-block {
+      padding-left: 0;
+      padding-right: 48px;
+    }
+    &__overflow {
+      height: 160px;
+      &--state--opened {
+        height: auto;
+        overflow: visible;
+      }
+    }
+
+    &__text {
+      line-height: 20px;
+      padding-bottom: 20px;
+    }
+    &__show-more {
+      margin-top: 10px;
+    }
   }
 }

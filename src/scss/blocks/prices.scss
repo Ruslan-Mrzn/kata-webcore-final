@@ -56,6 +56,7 @@
 
 @media (min-width: 768px) {
   .prices {
+    padding: 15px 24px 0;
     &__title {
       padding: 0;
     }
@@ -63,12 +64,15 @@
     & .swiper-wrapper {
       box-sizing: border-box;
       display: grid;
-      grid-template-columns: minmax(1fr, min-content) repeat(2, 1fr) min-content;
+      grid-template-columns: minmax(max-content, 388px) minmax(
+          max-content,
+          96px
+        ) 1fr min-content;
       grid-auto-rows: auto;
     }
 
     &__header {
-      padding: 16px;
+      padding: 16px 16px;
       grid-column: span 4;
       display: grid;
       grid-template-columns: subgrid;
@@ -76,11 +80,16 @@
 
     & .swiper-slide {
       border-radius: 0;
+      padding-top: 17px;
+      align-items: center;
       min-height: auto;
       grid-column: span 4;
       display: grid;
       grid-template-columns: subgrid;
       align-items: center;
+      & * {
+        line-height: 1;
+      }
 
       &::after {
         content: '';
@@ -114,7 +123,7 @@
 
     &__button {
       position: relative;
-      bottom: auto;
+      bottom: 2px;
       right: auto;
       margin-left: auto;
     }
