@@ -39,3 +39,15 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .repair-prices {
+    &__description {
+      padding-left: 31px;
+      padding-top: 31px;
+    }
+    &__offer {
+      margin-left: 31px;
+    }
+  }
+}

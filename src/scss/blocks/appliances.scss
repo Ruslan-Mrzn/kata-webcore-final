@@ -32,3 +32,17 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .appliances {
+    & .swiper-wrapper {
+      grid-template-columns: repeat(auto-fit, 240px);
+      gap: 16px 32px;
+      padding-left: 32px;
+      padding-right: 0;
+    }
+    &__show-more {
+      margin-left: 30px;
+    }
+  }
+}

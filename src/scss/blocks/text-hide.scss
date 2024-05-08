@@ -1,0 +1,6 @@
+.text-hide {
+  display: inline;
+  &--state--hidden {
+    display: none;
+  }
+}

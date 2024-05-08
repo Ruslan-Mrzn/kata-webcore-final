@@ -42,10 +42,14 @@ const showMore = (blockClassName, overflowBlockClassName) => {
   const block = document.querySelector(`.${blockClassName}`)
   const overflowBlock = block.querySelector(`.${overflowBlockClassName}`)
   const button = block.querySelector('.show-more-button')
+  const textShow = button.querySelector('.text-show')
+  const textHide = button.querySelector('.text-hide')
   button.addEventListener('click', (evt) => {
     evt.preventDefault()
     overflowBlock.classList.toggle(`${overflowBlockClassName}--state--opened`)
     button.classList.toggle('show-more-button--state--show')
+    textShow.classList.toggle('text-show--state--hidden')
+    textHide.classList.toggle('text-hide--state--hidden')
   })
 }
 

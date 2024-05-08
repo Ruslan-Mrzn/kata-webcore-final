@@ -74,3 +74,30 @@
     max-width: 320px;
   }
 }
+
+@media (min-width: 1366px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+
+    transform: scale(1, 1);
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu {
+    padding-top: 115px;
+    padding-bottom: 32px;
+    width: 308px;
+    &__search {
+      top: 35px;
+      right: 31px;
+    }
+    &__tel {
+      margin-bottom: 35px;
+    }
+  }
+}

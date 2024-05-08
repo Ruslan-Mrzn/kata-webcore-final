@@ -7,7 +7,7 @@ a {
 }
 
 html {
-  background-color: #333333;
+  background-color: $color-main-bg;
   scroll-behavior: smooth;
 }
 
@@ -23,7 +23,7 @@ body {
   font-family: 'TT Lakes', sans-serif;
   font-weight: normal;
   min-width: 320px;
-  max-width: 100%;
+  max-width: none;
   margin: 0 auto;
   background: #ffffff;
   position: relative;
@@ -34,6 +34,7 @@ button {
 }
 
 .swiper-wrapper {
+  max-width: 100%;
 }
 
 .swiper-slide {
@@ -49,4 +50,20 @@ button {
   width: 12px;
   height: 12px;
   margin: 0 6px !important;
+}
+
+@media (min-width: 1366px) {
+  body {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    position: relative;
+    grid-template-columns: 308px 1134px;
+
+    margin: 0 auto;
+  }
 }

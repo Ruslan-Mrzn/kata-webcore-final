@@ -4,3 +4,9 @@
   position: relative;
   order: 1;
 }
+
+@media (min-width: 1366px) {
+  .nav-button {
+    display: none;
+  }
+}

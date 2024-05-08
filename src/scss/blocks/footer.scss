@@ -5,6 +5,7 @@
   padding: 16px;
   row-gap: 16px;
   border-top: 1px solid $color-header-border;
+  background-color: $color-main-bg;
   &__link {
     text-align: center;
     font-size: 14px;
@@ -27,7 +28,14 @@
       }
       &:last-of-type {
         text-align: right;
+        width: 330px;
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 34px 29px 21px 30px;
   }
 }

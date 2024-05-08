@@ -21,7 +21,6 @@
     background-position: center center;
   }
   &--state--show {
-    color: transparent;
     &::before {
       transform: rotate(180deg);
     }
