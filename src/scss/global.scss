@@ -4,6 +4,8 @@ img {
 
 a {
   text-decoration: none;
+  opacity: 1;
+  transition: all 0.2s ease;
 }
 
 html {
@@ -23,17 +25,21 @@ body {
   font-family: 'TT Lakes', sans-serif;
   font-weight: normal;
   min-width: 320px;
-  max-width: none;
+  width: 100%;
   margin: 0 auto;
   background: #ffffff;
   position: relative;
+  overflow-x: hidden;
 }
 
 button {
   font-family: inherit;
+  transition: all 0.2s ease;
+  opacity: 1;
 }
 
 .swiper-wrapper {
+  box-sizing: border-box;
   max-width: 100%;
 }
 
@@ -62,8 +68,27 @@ button {
 @media (min-width: 1440px) {
   body {
     position: relative;
-    grid-template-columns: 308px 1134px;
+    width: 1440px;
+    grid-template-columns: 308px 1fr;
 
     margin: 0 auto;
+  }
+}
+
+@media (hover: hover) {
+  button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  label {
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.2s ease;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  a:hover {
+    opacity: 0.5;
   }
 }

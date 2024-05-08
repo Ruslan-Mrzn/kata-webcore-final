@@ -1,5 +1,6 @@
 .screen {
   &--state--menu-opened {
+    overflow-y: hidden;
     &::before {
       content: '';
       position: absolute;

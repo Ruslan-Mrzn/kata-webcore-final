@@ -2,7 +2,7 @@
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -100%;
   width: 100%;
@@ -77,9 +77,11 @@
 
 @media (min-width: 1366px) {
   .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
     width: 320px;
 
     transform: scale(1, 1);

@@ -26,6 +26,10 @@
   &__logo {
     order: 2;
   }
+
+  &__label {
+    display: none;
+  }
 }
 
 @media (min-width: 360px) {
@@ -65,13 +69,12 @@
     &__contacts-buttons-block {
       display: none;
     }
-
-    &__logo {
-      position: fixed;
-      top: 30px;
-      left: 22px;
+    &__buttons-block {
+      z-index: 200;
     }
+
     &__label {
+      display: inline-block;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
@@ -87,7 +90,7 @@
     max-width: 100%;
     align-items: end;
     padding-bottom: 6px;
-    padding-right: 30px;
+    padding-right: 45px;
     &__buttons-block {
       column-gap: 32px;
     }
