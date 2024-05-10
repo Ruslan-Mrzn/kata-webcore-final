@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="screen">
+<html lang="en">
   <head>
     <link rel="icon" href="./img/favicon-16x16.png" />
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Webcore-final</title>
   </head>
-  <body>
+  <body class="screen">
     <div class="screen__menu">
       <menu class="menu">
         <button
@@ -99,7 +99,7 @@
       </header>
       <main class="main">
         <section class="hero">
-          <h2 class="hero__header"></h2>
+          <h2 class="hero__header title-with-mark"></h2>
           <ul class="hero__services services">
             <li class="services__item">
               <a
@@ -481,5 +481,43 @@
         >
       </footer>
     </div>
+    <section class="screen__form feedback-form">
+      <h2 class="title-with-mark"> Обратная связь </h2>
+      <form action="" class="form">
+        <input class="form__input" type="text" placeholder="Имя" />
+        <input class="form__input" type="number" placeholder="Телефон" />
+        <input
+          class="form__input"
+          type="email"
+          placeholder="Электронная почта"
+        />
+        <textarea
+          class="form__input form__input--type--textarea"
+          placeholder="Сообщение"
+        ></textarea>
+        <p class="form__text"
+          >Нажимая “отправить”, вы даете согласие на
+          <a class="form__link" href="#">обработку персональных данных</a> и
+          соглашаетесь с нашей
+          <a class="form__link" href="#">политикой конфиденциальности</a></p
+        >
+        <button class="form__submit" type="submit">ОТПРАВИТЬ</button>
+      </form>
+      <button class="close-button"></button>
+    </section>
+    <section class="screen__form call-form">
+      <h2 class="title-with-mark">Заказать звонок</h2>
+      <form action="" class="form">
+        <input class="form__input" type="number" placeholder="Телефон" />
+        <p class="form__text"
+          >Нажимая “отправить”, вы даете согласие на
+          <a class="form__link" href="#">обработку персональных данных</a> и
+          соглашаетесь с нашей
+          <a class="form__link" href="#">политикой конфиденциальности</a></p
+        >
+        <button class="form__submit" type="submit">ОТПРАВИТЬ</button>
+      </form>
+      <button class="close-button"></button>
+    </section>
   </body>
 </html>

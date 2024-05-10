@@ -1,0 +1,30 @@
+.title-with-mark {
+  position: relative;
+  padding-left: 16px;
+  line-height: 40px;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  &::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 4px;
+    background-color: $color-nav-item-active;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-with-mark {
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .title-with-mark {
+    padding-left: 33px;
+  }
+}

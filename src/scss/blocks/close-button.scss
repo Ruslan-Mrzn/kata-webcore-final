@@ -1,0 +1,16 @@
+.close-button {
+  @include round-button;
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  background-image: url('../img/close-icon.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .close-button {
+    top: 32px;
+    left: -73px;
+  }
+}

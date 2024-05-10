@@ -1,25 +1,6 @@
 .hero {
   padding-top: 24px;
 
-  &__header {
-    position: relative;
-    padding-left: 16px;
-    line-height: 40px;
-    font-size: 28px;
-    letter-spacing: -0.6px;
-    &::before {
-      position: absolute;
-      content: '';
-      height: 100%;
-      width: 4px;
-      background-color: $color-nav-item-active;
-      top: 0;
-      left: 0;
-      border-top-right-radius: 6px;
-      border-bottom-right-radius: 6px;
-    }
-  }
-
   &__services {
     margin-top: 24px;
     padding-left: 16px;
@@ -81,9 +62,7 @@
       width: 360px;
       margin-top: 0;
     }
-    &__header {
-      padding-left: 24px;
-    }
+
     &__inner {
       padding: 32px 24px 0;
       display: flex;
@@ -119,9 +98,7 @@
 @media (min-width: 1440px) {
   .hero {
     padding-top: 43px;
-    &__header {
-      padding-left: 33px;
-    }
+
     &__services {
       margin-top: 8px;
       padding-left: 33px;

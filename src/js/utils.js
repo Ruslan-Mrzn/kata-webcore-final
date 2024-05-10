@@ -9,6 +9,16 @@ const closeMenu = () => {
   burger.classList.remove('burger--state--menu-opened')
 }
 
+const closeForm = (evt) => {
+  document.querySelector('.screen')
+  evt.preventDefault()
+  evt.target
+    .closest('.screen__form')
+    .classList.remove('screen__form--state--opened')
+  const screen = document.querySelector('.screen')
+  screen.classList.remove('screen--state--menu-opened')
+}
+
 const toggleActiveLink = (blockClassName, headerClassName) => {
   if (headerClassName) {
     const header = document.querySelector(`.${headerClassName}`)
@@ -53,4 +63,4 @@ const showMore = (blockClassName, overflowBlockClassName) => {
   })
 }
 
-export { toggleActiveLink, showMore }
+export { toggleActiveLink, showMore, closeForm, closeMenu }
